@@ -1,5 +1,7 @@
 import { client, urlFor } from '../lib/sanity'
 
+export const revalidate = 0
+
 export default async function Home() {
   const homeQuery = `*[_type == "homePage"][0]`
   const productsQuery = `*[_type == "product"]`
