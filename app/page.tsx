@@ -154,10 +154,10 @@ export default async function Home() {
                     className="w-full h-64 object-contain bg-white"
                   />
 
-                ) : (
+                ))}
 
                   <div className="w-full h-full flex items-center justify-center text-black/30 tracking-[0.2em] text-sm">
-                    PRODUCT IMAGE
+                    PRODUCT IMAGES
                   </div>
 
                 )}
