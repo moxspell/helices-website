@@ -151,14 +151,10 @@ export default async function Home() {
 		    key={index}
                     src={urlFor(image).width(800).url()}
                     alt={product.name}
-                    className="w-full h-64 object-contain bg-white"
+                    className="w-full h-[32rem] object-contain bg-white"
                   />
 
                 ))}
-
-                  <div className="w-full h-full flex items-center justify-center text-black/30 tracking-[0.2em] text-sm">
-                    PRODUCT IMAGES
-                  </div>
 
               </div>
 
@@ -220,7 +216,7 @@ export default async function Home() {
           <img
             src={urlFor(technology.image).width(800).url()}
             alt={technology.title}
-            className="w-full h-64 object-contain bg-white"
+            className="w-full h-[32rem] object-contain bg-white"
           />
 
         ) : (
