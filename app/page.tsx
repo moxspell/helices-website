@@ -84,24 +84,6 @@ export default async function Home() {
             {home?.subheadline}
           </p>
 
-          <div className="flex gap-4 mt-12 flex-wrap">
-
-            <a
-              href="#products"
-              className="px-6 py-3 border border-black hover:bg-black hover:text-white transition-colors"
-            >
-              Explore MAS 2.0
-            </a>
-
-            <a
-              href="#contact"
-              className="px-6 py-3 border border-black/20 hover:border-black"
-            >
-              Contact
-            </a>
-
-          </div>
-
         </div>
       </section>
 
