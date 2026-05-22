@@ -160,8 +160,6 @@ export default async function Home() {
                     PRODUCT IMAGES
                   </div>
 
-                )}
-
               </div>
 
             </div>
