@@ -141,7 +141,7 @@ export default async function Home() {
 
               </div>
 
-              <div className="aspect-square border border-black/10 overflow-hidden bg-black/[0.02]">
+              <div className="aspect-square overflow-hidden">
 
                 {product.image ? (
 
