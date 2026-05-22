@@ -145,10 +145,11 @@ export default async function Home() {
 
               <div className="aspect-square overflow-hidden">
 
-                {product.image ? (
+                {product.images?.map((image: any, index: number) => (
 
                   <img
-                    src={urlFor(product.image).width(800).url()}
+		    key={index}
+                    src={urlFor(image).width(800).url()}
                     alt={product.name}
                     className="w-full h-64 object-contain bg-white"
                   />

@@ -14,9 +14,17 @@ export default {
       type: 'text',
     },
     {
-      name: 'image',
-      title: 'Product Image',
-      type: 'image',
+      name: 'images',
+      title: 'Images',
+      type: 'array',
+      of: [
+        {
+          type: 'image',
+          options: {
+            hotspot: true,
+          },
+        },
+      ],
     },
   ],
 }
