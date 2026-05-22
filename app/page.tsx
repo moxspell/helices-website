@@ -170,67 +170,76 @@ export default async function Home() {
         </div>
       </section>
 
-{/* TECHNOLOGY */}
-<section
-  id="technology"
-  className="max-w-7xl mx-auto px-6 py-28 border-b border-black/10"
->
-
-  <div className="max-w-3xl mb-16">
-
-    <p className="text-sm tracking-[0.25em] text-black/50 mb-4">
-      TECHNOLOGY
-    </p>
-
-    <h3 className="text-4xl md:text-5xl font-light mb-8">
-      Nucleic Acid Photolithography.
-    </h3>
-
-    <p className="text-black/70 text-lg leading-relaxed">
-      Helices develops photolithography systems designed for
-      massively parallel synthesis of nucleic acids at ultra-large scales.
-    </p>
-
-  </div>
-
-  <div className="grid md:grid-cols-3 gap-8">
-
-    {technologies.map((technology: any) => (
-
-      <div
-        key={technology._id}
-        className="border border-black/10 overflow-hidden"
+      {/* TECHNOLOGY */}
+      <section
+        id="technology"
+        className="max-w-7xl mx-auto px-6 py-28 border-b border-black/10"
       >
 
-        {technology.image && (
+        <div className="max-w-3xl mb-16">
 
-          <img
-            src={urlFor(technology.image).width(800).url()}
-            alt={technology.title}
-            className="w-full aspect-square object-cover"
-          />
+          <p className="text-sm tracking-[0.25em] text-black/50 mb-4">
+            TECHNOLOGY
+          </p>
 
-        )}
+          <h3 className="text-4xl md:text-5xl font-light mb-8">
+            Nucleic Acid Photolithography.
+          </h3>
 
-        <div className="p-8">
-
-          <h4 className="text-2xl font-light mb-6">
-            {technology.title}
-          </h4>
-
-          <p className="text-black/60 leading-relaxed whitespace-pre-line">
-            {technology.description}
+          <p className="text-black/70 text-lg leading-relaxed">
+            Helices develops photolithography systems designed for
+            massively parallel synthesis of nucleic acids at ultra-large scales.
           </p>
 
         </div>
 
+        <div className="space-y-20">
+
+  {technologies.map((technology: any) => (
+
+    <div
+      key={technology._id}
+      className="grid md:grid-cols-2 gap-16 items-center"
+    >
+
+      <div>
+
+        <h4 className="text-3xl font-light mb-6">
+          {technology.title}
+        </h4>
+
+        <p className="text-black/70 text-lg leading-relaxed whitespace-pre-line">
+          {technology.description}
+        </p>
+
       </div>
 
-    ))}
+      <div className="aspect-square overflow-hidden">
 
-  </div>
+        {technology.image ? (
 
-</section>
+          <img
+            src={urlFor(technology.image).width(800).url()}
+            alt={technology.title}
+            className="w-full h-full object-cover"
+          />
+
+        ) : (
+
+          <div className="w-full h-full flex items-center justify-center text-black/30 tracking-[0.2em] text-sm">
+            TECHNOLOGY IMAGE
+          </div>
+
+        )}
+
+      </div>
+
+    </div>
+
+  ))}
+
+</div>
+      </section>
 
       {/* TEAM */}
       <section
