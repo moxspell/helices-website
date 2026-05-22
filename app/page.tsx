@@ -128,7 +128,7 @@ export default async function Home() {
 
             <div
               key={product._id}
-              className="grid md:grid-cols-2 gap-16 items-center"
+              className="grid md:grid-cols-2 gap-16 items-start"
             >
 
               <div>
@@ -199,7 +199,7 @@ export default async function Home() {
 
     <div
       key={technology._id}
-      className="grid md:grid-cols-2 gap-16 items-center"
+      className="grid md:grid-cols-2 gap-16 items-start"
     >
 
       <div>
