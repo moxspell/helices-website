@@ -135,7 +135,7 @@ export default async function Home() {
                   {product.name}
                 </h4>
 
-                <p className="text-black/70 text-lg leading-relaxed">
+                <p className="text-black/70 text-lg leading-relaxed whitespace-pre-line">
                   {product.description}
                 </p>
 
