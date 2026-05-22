@@ -5,11 +5,13 @@ export const revalidate = 0
 export default async function Home() {
   const homeQuery = `*[_type == "homePage"][0]`
   const productsQuery = `*[_type == "product"]`
+  const technologyQuery = `*[_type == "technology"]`
   const teamQuery = `*[_type == "teamMember"]`
   const contactQuery = `*[_type == "contact"][0]`
 
   const home = await client.fetch(homeQuery)
   const products = await client.fetch(productsQuery)
+  const technologies = await client.fetch(technologyQuery)
   const team = await client.fetch(teamQuery)
   const contact = await client.fetch(contactQuery)
 
@@ -168,30 +170,67 @@ export default async function Home() {
         </div>
       </section>
 
-      {/* TECHNOLOGY */}
-      <section
-        id="technology"
-        className="max-w-7xl mx-auto px-6 py-28 border-b border-black/10"
+{/* TECHNOLOGY */}
+<section
+  id="technology"
+  className="max-w-7xl mx-auto px-6 py-28 border-b border-black/10"
+>
+
+  <div className="max-w-3xl mb-16">
+
+    <p className="text-sm tracking-[0.25em] text-black/50 mb-4">
+      TECHNOLOGY
+    </p>
+
+    <h3 className="text-4xl md:text-5xl font-light mb-8">
+      Nucleic Acid Photolithography.
+    </h3>
+
+    <p className="text-black/70 text-lg leading-relaxed">
+      Helices develops photolithography systems designed for
+      massively parallel synthesis of nucleic acids at ultra-large scales.
+    </p>
+
+  </div>
+
+  <div className="grid md:grid-cols-3 gap-8">
+
+    {technologies.map((technology: any) => (
+
+      <div
+        key={technology._id}
+        className="border border-black/10 overflow-hidden"
       >
 
-        <div className="max-w-3xl mb-16">
+        {technology.image && (
 
-          <p className="text-sm tracking-[0.25em] text-black/50 mb-4">
-            TECHNOLOGY
-          </p>
+          <img
+            src={urlFor(technology.image).width(800).url()}
+            alt={technology.title}
+            className="w-full aspect-square object-cover"
+          />
 
-          <h3 className="text-4xl md:text-5xl font-light mb-8">
-            Nucleic Acid Photolithography.
-          </h3>
+        )}
 
-          <p className="text-black/70 text-lg leading-relaxed">
-            Helices develops photolithography systems designed for
-            massively parallel synthesis of nucleic acids at ultra-large scales.
+        <div className="p-8">
+
+          <h4 className="text-2xl font-light mb-6">
+            {technology.title}
+          </h4>
+
+          <p className="text-black/60 leading-relaxed whitespace-pre-line">
+            {technology.description}
           </p>
 
         </div>
 
-      </section>
+      </div>
+
+    ))}
+
+  </div>
+
+</section>
 
       {/* TEAM */}
       <section
