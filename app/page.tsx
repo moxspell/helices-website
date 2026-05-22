@@ -314,7 +314,7 @@ export default async function Home() {
             How to get in touch.
           </h3>
 
-          <div className="space-y-4 text-black/70 text-lg">
+          <div className="space-y-4 text-black/70 text-lg whitespace-pre-line">
 
             <p>{contact?.email}</p>
 
