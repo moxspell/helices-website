@@ -4,8 +4,8 @@ export const revalidate = 0
 
 export default async function Home() {
   const homeQuery = `*[_type == "homePage"][0]`
-  const productsQuery = `*[_type == "product"]`
-  const technologyQuery = `*[_type == "technology"]`
+  const productsQuery = `*[_type == "product"] | order(order asc)`
+  const technologyQuery = `*[_type == "technology"] | order(order asc)`
   const teamQuery = `*[_type == "teamMember"]`
   const contactQuery = `*[_type == "contact"][0]`
 
@@ -150,7 +150,7 @@ export default async function Home() {
                   <img
                     src={urlFor(product.image).width(800).url()}
                     alt={product.name}
-                    className="w-full h-full object-cover"
+                    className="w-full h-64 object-contain bg-white"
                   />
 
                 ) : (
@@ -221,7 +221,7 @@ export default async function Home() {
           <img
             src={urlFor(technology.image).width(800).url()}
             alt={technology.title}
-            className="w-full h-full object-cover"
+            className="w-full h-64 object-contain bg-white"
           />
 
         ) : (

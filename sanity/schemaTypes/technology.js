@@ -5,6 +5,11 @@ export default {
 
   fields: [
     {
+      name: 'order',
+      title: 'Order',
+      type: 'number',
+    },
+    {
       name: 'title',
       title: 'Title',
       type: 'string',
