@@ -13,10 +13,10 @@ export default function Privacy() {
         Datenschutzerklärung
       </h1>
 
-      <div className="space-y-8 text-black/70 leading-relaxed">
+      <div className="space-y-8 text-white/70 leading-relaxed">
 
         <section>
-          <h2 className="text-xl text-black mb-3">
+          <h2 className="text-xl text-white mb-3">
             Verantwortlicher
           </h2>
 
@@ -25,16 +25,18 @@ export default function Privacy() {
           </p>
 
           <p>
-            [Adresse einfügen]
+            Josef-Holaubek-Platz 2
+	    1090 Vienna
+            Austria
           </p>
 
           <p>
-            [E-Mail-Adresse einfügen]
+            helices.bio (at) gmail.com
           </p>
         </section>
 
         <section>
-          <h2 className="text-xl text-black mb-3">
+          <h2 className="text-xl text-white mb-3">
             Zugriffsdaten
           </h2>
 
@@ -47,7 +49,7 @@ export default function Privacy() {
         </section>
 
         <section>
-          <h2 className="text-xl text-black mb-3">
+          <h2 className="text-xl text-white mb-3">
             Hosting
           </h2>
 
@@ -59,7 +61,7 @@ export default function Privacy() {
         </section>
 
         <section>
-          <h2 className="text-xl text-black mb-3">
+          <h2 className="text-xl text-white mb-3">
             Kontaktaufnahme
           </h2>
 
@@ -71,7 +73,7 @@ export default function Privacy() {
         </section>
 
         <section>
-          <h2 className="text-xl text-black mb-3">
+          <h2 className="text-xl text-white mb-3">
             Ihre Rechte
           </h2>
 
