@@ -29,6 +29,17 @@ export default {
             hotspot: true,
           },
         },
+     {
+       name: 'downloadFile',
+       title: 'Download File',
+       type: 'file',
+     },
+
+     {
+       name: 'downloadLabel',
+       title: 'Download Button Text',
+       type: 'string',
+     },
       ],
     },
   ],
