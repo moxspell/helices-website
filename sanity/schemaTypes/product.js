@@ -19,8 +19,8 @@ export default {
       type: 'text',
     },
     {
-      name: 'image',
-      title: 'Image',
+      name: 'images',
+      title: 'Images',
       type: 'array',
       of: [
         {
