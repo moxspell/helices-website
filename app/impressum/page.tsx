@@ -9,7 +9,7 @@ export default function Impressum() {
       <div className="space-y-6 text-black/70 leading-relaxed">
 
         <div>
-          <h2 className="font-medium text-black mb-2">
+          <h2 className="font-medium text-white mb-2">
             Angaben gemäß § 5 ECG und § 25 Mediengesetz
           </h2>
 
