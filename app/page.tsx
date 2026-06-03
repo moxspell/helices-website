@@ -305,6 +305,17 @@ export default async function Home() {
 
       </section>
 
+<footer className="border-t border-black/10 mt-20">
+  <div className="max-w-7xl mx-auto px-6 py-8 flex justify-between text-sm text-black/50">
+    <span>© {new Date().getFullYear()} Helices Biological Photolithography GmbH</span>
+
+    <div className="flex gap-6">
+      <a href="/impressum">Impressum</a>
+      <a href="/privacy">Datenschutz</a>
+    </div>
+  </div>
+</footer>
+
     </main>
   )
 }
