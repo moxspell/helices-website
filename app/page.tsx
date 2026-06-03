@@ -68,9 +68,9 @@ export default async function Home() {
       {/* HERO */}
       <section
         id="home"
-        className="max-w-7xl mx-auto px-6 py-36 border-b border-black/10"
+        className="max-w-7xl mx-auto px-6 py-20 border-b border-black/10"
       >
-        <div className="max-w-4xl">
+        <div className="max-w-4xl mx-auto text-center">
 
           <p className="text-sm tracking-[0.3em] text-black/50 mb-6">
             PRECISION PHOTOLITHOGRAPHY SYSTEMS
@@ -80,12 +80,12 @@ export default async function Home() {
             {home?.headline}
           </h2>
 
-          <p className="text-xl text-black/70 mt-10 max-w-2xl leading-relaxed">
+          <p className="text-xl text-black/70 mt-10 max-w-2xl mx-auto leading-relaxed">
             {home?.subheadline}
           </p>
 
-        </div>
-      </section>
+         </div>
+       </section>
 
       {/* PRODUCTS */}
       <section
