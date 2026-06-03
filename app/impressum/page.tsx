@@ -6,7 +6,7 @@ export default function Impressum() {
         Impressum
       </h1>
 
-      <div className="space-y-6 text-black/70 leading-relaxed">
+      <div className="space-y-6 text-white/70 leading-relaxed">
 
         <div>
           <h2 className="font-medium text-white mb-2">
