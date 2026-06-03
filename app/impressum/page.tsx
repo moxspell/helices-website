@@ -24,7 +24,7 @@ export default function Impressum() {
           </p>
 
           <p>
-            E-Mail: helices.bio@gmail.com
+            E-Mail: helices.bio (at) gmail.com
           </p>
 
           <p>
