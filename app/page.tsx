@@ -4,7 +4,12 @@ export const revalidate = 0
 
 export default async function Home() {
   const homeQuery = `*[_type == "homePage"][0]`
-  const productsQuery = `*[_type == "product"] | order(order asc)`
+  const productsQuery = `
+*[_type == "product"] | order(order asc){
+  ...,
+  "downloadUrl": downloadFile.asset->url
+}
+`
   const technologyQuery = `*[_type == "technology"] | order(order asc)`
   const teamQuery = `*[_type == "teamMember"]`
   const contactQuery = `*[_type == "contact"][0]`
@@ -122,6 +127,17 @@ export default async function Home() {
                 <p className="text-black/70 text-lg leading-relaxed whitespace-pre-line">
                   {product.description}
                 </p>
+
+ {product.downloadUrl && (
+    <a
+      href={product.downloadUrl}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="inline-block mt-8 border border-black px-6 py-3 text-sm tracking-wide hover:bg-black hover:text-white transition"
+    >
+      {product.downloadLabel || 'Download PDF'}
+    </a>
+  )}
 
               </div>
 

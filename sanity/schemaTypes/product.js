@@ -32,7 +32,6 @@ export default {
       ],
     },
 
-    // ✅ download section belongs here, not inside images
     {
       name: 'downloadFile',
       title: 'Download File',
